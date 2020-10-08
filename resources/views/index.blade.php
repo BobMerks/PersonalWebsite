@@ -26,13 +26,13 @@
         <span class="landing__line-text landing__line-text-3">a passion for</span>
       </div>
       <div class="landing__line">
-        <span class="landing__line-text landing__line-text-4">programming</span>
+        <span class="landing__line-text landing__line-text-4">Programming</span>
       </div>
       <div class="landing__line">
-        <span class="landing__line-text landing__line-text-5">design</span>
+        <span class="landing__line-text landing__line-text-5">Design</span>
       </div>
       <div class="landing__line">
-        <span class="landing__line-text landing__line-text-6">learning</span>
+        <span class="landing__line-text landing__line-text-6">Learning</span>
       </div>
     </div>
   </section>
