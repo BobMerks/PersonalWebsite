@@ -35,17 +35,40 @@ body {
         transition-delay: 1.25s;
       }
 
-      &-4{
+      &-4 {
         transition-delay: 2.5s;
       }
 
-      &-5{
+      &-5 {
         transition-delay: 3.75s;
       }
 
-      &-6{
+      &-6 {
         transition-delay: 5s;
       }
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  padding: 5%;
+
+  &-link {
+    text-decoration: none;
+    padding: 0 2.5%;
+    color: #ccc;
+    opacity: 0.35;
+
+    &:visited {
+      opacity: 0.35;
+    }
+
+    &:hover, &--active {
+      opacity: 0.85;
     }
   }
 }

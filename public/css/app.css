@@ -48,6 +48,30 @@
   transition-delay: 5s;
 }
 
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  padding: 5%;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0 2.5%;
+  color: #ccc;
+  opacity: 0.35;
+}
+
+.nav-link:visited {
+  opacity: 0.35;
+}
+
+.nav-link:hover,
+.nav-link--active {
+  opacity: 0.85;
+}
+
 .visible {
   opacity: 1;
 }

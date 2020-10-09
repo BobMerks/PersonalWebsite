@@ -14,7 +14,11 @@
 </head>
 <body onload="fadeIn()">
 <div class="page">
-  <section class="landing">
+  <nav class="nav">
+      <a class="nav-link" href="#">My projects</a>
+      <a class="nav-link" href="#">Contact</a>
+  </nav>
+  <div class="landing">
     <div class="landing-content">
       <div class="landing__line">
         <span class="landing__line-text landing__line-text-1">Bob Merks.</span>
@@ -35,7 +39,7 @@
         <span class="landing__line-text landing__line-text-6">Learning</span>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 </body>
 
