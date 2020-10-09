@@ -40,6 +40,14 @@
       </div>
     </div>
   </section>
+
+  <section class="projects">
+    <div class="projects-content">
+      <div class="projects__item">1</div>
+      <div class="projects__item">2</div>
+      <div class="projects__item">3</div>
+    </div>
+  </section>
 </div>
 </body>
 

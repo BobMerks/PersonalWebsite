@@ -5,6 +5,32 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  padding: 2.5% 5%;
+  z-index: 999;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0 25px 0 0;
+  color: #ccc;
+  font-size: 100%;
+  opacity: 0.35;
+}
+
+.nav-link:visited {
+  opacity: 0.35;
+}
+
+.nav-link:hover,
+.nav-link--active {
+  opacity: 0.85;
+}
+
 .landing {
   min-height: 100vh;
   display: grid;
@@ -27,50 +53,25 @@
 .landing__line-text {
   font-size: 8vh;
   opacity: 0;
-  transition: opacity 1.25s;
+  transition: opacity 1.25s cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.15;
 }
 
 .landing__line-text-2,
 .landing__line-text-3 {
-  transition-delay: 1.25s;
+  transition-delay: 1.75s;
 }
 
 .landing__line-text-4 {
-  transition-delay: 2.5s;
+  transition-delay: 3.5s;
 }
 
 .landing__line-text-5 {
-  transition-delay: 3.75s;
+  transition-delay: 4.75s;
 }
 
 .landing__line-text-6 {
-  transition-delay: 5s;
-}
-
-.nav {
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
-  width: 90%;
-  padding: 5%;
-}
-
-.nav-link {
-  text-decoration: none;
-  padding: 0 25px 0 0;
-  color: #ccc;
-  font-size: 100%;
-  opacity: 0.35;
-}
-
-.nav-link:visited {
-  opacity: 0.35;
-}
-
-.nav-link:hover,
-.nav-link--active {
-  opacity: 0.85;
+  transition-delay: 6s;
 }
 
 .visible {
