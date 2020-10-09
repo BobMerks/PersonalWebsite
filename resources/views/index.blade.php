@@ -16,6 +16,7 @@
 <div class="page">
   <nav class="nav">
     <div class="nav-content">
+      <!-- TODO: Change this to JS that scrolls 100vh -->
       <a class="nav-link" href="#projects">My projects</a>
       <a class="nav-link" href="#">Contact</a>
     </div>
