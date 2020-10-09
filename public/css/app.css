@@ -51,15 +51,16 @@
 .nav {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 90%;
   padding: 5%;
 }
 
 .nav-link {
   text-decoration: none;
-  padding: 0 2.5%;
+  padding: 0 25px 0 0;
   color: #ccc;
+  font-size: 100%;
   opacity: 0.35;
 }
 
