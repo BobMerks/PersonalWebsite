@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: black;
+  background: #000;
   margin: 0;
   color: #ccc;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .nav {
-  position: fixed;
   display: flex;
   justify-content: flex-end;
   width: 90%;
   padding: 2.5% 5%;
   z-index: 999;
+
+  &-content {
+    position: fixed;
+  }
 
   &-link {
     text-decoration: none;
@@ -34,10 +41,13 @@ body {
 
 .landing {
   min-height: 100vh;
-  display: grid;
+  width: 100%;
+  top: 0;
+  display: flex;
   place-items: center;
   color: #fff;
-  // TODO: Fade in page
+  position: fixed;
+  z-index: -999;
 
   &-content {
     padding: 10vh 5%;
@@ -75,8 +85,78 @@ body {
   }
 }
 
+.projects {
+  top: 0;
+  margin-top: 90vh;
+  background: #000;
+  z-index: 2;
+  display: block;
+
+  &-content {
+    padding: 0 5%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-header {
+    padding-left: 5%;
+    font-size: 6vh;
+    color: #fff;
+  }
+
+  &__container {
+    background-color: #000;
+    flex: 0 1;
+    min-width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 5vh 2.5%;
+    justify-content: space-around;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    transition: background 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
+    flex-grow 0.6s cubic-bezier(0.0, 0.0, 0.2, 1);
+
+    &-title {
+      font-size: 125%;
+      margin: 0 0 16px 0;
+    }
+
+    &-image {
+      height: 100%;
+      width: 100%;
+      background: #252525;
+    }
+
+    &-link {
+      color: #777;
+    }
+
+    &:hover {
+      background-color: #222;
+      color: #fff;
+      flex-grow: 2;
+    }
+  }
+
+  &:before {
+    position: relative;
+    width: 100%;
+    top: -100px;
+    height: 100px;
+    content: "";
+    background: linear-gradient(180deg, transparent, #000);
+    display: block;
+    z-index: -1;
+  }
+}
+
 .visible {
   opacity: 1;
 }
-
 

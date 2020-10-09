@@ -15,9 +15,12 @@
 <body onload="fadeIn()">
 <div class="page">
   <nav class="nav">
-      <a class="nav-link" href="#">My projects</a>
+    <div class="nav-content">
+      <a class="nav-link" href="#projects">My projects</a>
       <a class="nav-link" href="#">Contact</a>
+    </div>
   </nav>
+
   <section class="landing">
     <div class="landing-content">
       <div class="landing__line">
@@ -39,25 +42,74 @@
         <span class="landing__line-text landing__line-text-6">Learning</span>
       </div>
     </div>
-  </section>
-
-  <section class="projects">
-    <div class="projects-content">
-      <div class="projects__item">1</div>
-      <div class="projects__item">2</div>
-      <div class="projects__item">3</div>
+    <div class="landing-content">
+      <!-- TODO: add something interactive here i.e. 3d effect with mouse -->
     </div>
   </section>
+
+  <section id="projects" class="projects">
+    <span class="projects-header">My projects</span>
+    <div class="projects-content">
+      <!-- TODO: Place projects in these elements -->
+      <div class="projects__container">
+        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-image"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
+        <a class="projects__container-link">View on GitHub</a>
+      </div>
+
+      <div class="projects__container">
+        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-image"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
+        <a class="projects__container-link">View on GitHub</a>
+      </div>
+
+      <div class="projects__container">
+        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-image"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
+        <a class="projects__container-link">View on GitHub</a>
+      </div>
+
+      <div class="projects__container">
+        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-image"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
+        <a class="projects__container-link">View on GitHub</a>
+      </div>
+
+      <div class="projects__container">
+        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-image"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
+        <a class="projects__container-link">View on GitHub</a>
+      </div>
+
+      <div class="projects__container">
+        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-image"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
+        <a class="projects__container-link">View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="contact">
+    <div class="contact-content"></div>
+  </footer>
 </div>
 </body>
 
 <script>
   function fadeIn() {
-    var landingText = document.getElementsByClassName("landing__line-text");
-    for (var i = 0; i < landingText.length; i++) {
+    const landingText = document.getElementsByClassName("landing__line-text");
+
+    for (let i = 0; i < landingText.length; i++) {
       landingText.item(i).classList.add("visible");
-      console.log(landingText.item(i));
     }
   }
+
 </script>
 </html>
