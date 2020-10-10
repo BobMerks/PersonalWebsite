@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 body {
@@ -25,12 +26,11 @@ body {
   &-link {
     padding: 0 25px 0 0;
     color: #ccc;
-    font-size: 100%;
-    opacity: 0.35;
+    font-size: 20px;
     cursor: pointer;
 
     &:hover {
-      opacity: 0.85;
+      color: white;
     }
   }
 }
@@ -83,10 +83,12 @@ body {
 
 .projects {
   top: 0;
-  margin-top: 90vh;
-  background: #000;
+  margin-top: 200vh;
+  height: 100vh;
+  background: #00000075;
   z-index: 2;
   display: block;
+  transition: margin-top 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
 
   &-content {
     padding: 0 5%;
@@ -111,7 +113,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin: 5vh 2.5%;
+    margin: 2vh 2.5%;
     justify-content: space-around;
     border-radius: 3px;
     border: 2px solid transparent;
@@ -198,7 +200,7 @@ body {
     top: -100px;
     height: 100px;
     content: "";
-    background: linear-gradient(180deg, transparent, #000);
+    background: linear-gradient(180deg, transparent, #00000075);
     display: block;
     z-index: -1;
   }
@@ -207,4 +209,3 @@ body {
 .visible {
   opacity: 1;
 }
-
