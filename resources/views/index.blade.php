@@ -53,47 +53,76 @@
     <div class="projects-content">
       <!-- TODO: Place projects in these elements -->
       <div class="projects__container">
-        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-title">
+          <span class="projects__container-title--text">This website</span>
+          <span class="projects__container-title--date">October 2020</span>
+        </div>
         <div class="projects__container-image"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
-        <a class="projects__container-link">View on GitHub</a>
+        <div class="projects__container-description">
+          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
+          <a class="projects__container-link">View on GitHub</a>
+        </div>
       </div>
 
       <div class="projects__container">
-        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-title">
+          <span class="projects__container-title--text">JSON to radar graph</span>
+          <span class="projects__container-title--date">June 2020</span>
+        </div>
         <div class="projects__container-image"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
-        <a class="projects__container-link">View on GitHub</a>
+        <div class="projects__container-description">
+          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
+          <a class="projects__container-link">View on GitHub</a>
+        </div>
       </div>
 
       <div class="projects__container">
-        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-title">
+          <span class="projects__container-title--text">Sorting algorithms visualized</span>
+          <span class="projects__container-title--date">March 2020</span>
+        </div>
         <div class="projects__container-image"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
-        <a class="projects__container-link">View on GitHub</a>
+        <div class="projects__container-description">
+          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
+          <a class="projects__container-link">View on GitHub</a>
+        </div>
       </div>
 
       <div class="projects__container">
-        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-title">
+          <span class="projects__container-title--text">Drag-and-drop website builder</span>
+          <span class="projects__container-title--date">January 2020</span>
+        </div>
         <div class="projects__container-image"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
-        <a class="projects__container-link">View on GitHub</a>
+        <div class="projects__container-description">
+          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
+          <a class="projects__container-link">View on GitHub</a>
+        </div>
       </div>
 
       <div class="projects__container">
-        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-title">
+          <span class="projects__container-title--text">Movie list</span>
+          <span class="projects__container-title--date">August 2019</span>
+        </div>
         <div class="projects__container-image"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
-        <a class="projects__container-link">View on GitHub</a>
+        <div class="projects__container-description">
+          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
+          <a class="projects__container-link">View on GitHub</a>
+        </div>
       </div>
 
       <div class="projects__container">
-        <span class="projects__container-title">A thing I made</span>
+        <div class="projects__container-title">
+          <span class="projects__container-title--text">PAL in OOPS</span>
+          <span class="projects__container-title--date">May 2019</span>
+        </div>
         <div class="projects__container-image"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate?</p>
-        <a class="projects__container-link">View on GitHub</a>
+        <div class="projects__container-description">
+          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
+          <a class="projects__container-link">View on GitHub</a>
+        </div>
       </div>
-
     </div>
   </section>
 

@@ -107,6 +107,7 @@ body {
   }
 
   &__container {
+    $p: &;
     background-color: #000;
     flex: 0 1;
     min-width: 350px;
@@ -117,14 +118,28 @@ body {
     margin: 5vh 2.5%;
     justify-content: space-around;
     border-radius: 3px;
-    border: 2px solid #ccc;
+    border: 2px solid transparent;
     transition: background 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
     color 0.3s cubic-bezier(0.4, 0.0, 0.2, 1),
+    border 0.3s cubic-bezier(0.0, 0.0, 0.2, 1),
     flex-grow 0.6s cubic-bezier(0.0, 0.0, 0.2, 1);
 
     &-title {
       font-size: 125%;
       margin: 0 0 16px 0;
+      display: flex;
+      flex-direction: column;
+
+      &--date {
+        font-size: 80%;
+        color: #777;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
     }
 
     &-image {
@@ -133,14 +148,41 @@ body {
       background: #252525;
     }
 
+    &-description {
+      visibility: hidden;
+      transition: visibility 0s, opacity 0.2s;
+      opacity: 0;
+      height: 0;
+    }
+
+    &-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 0;
+      white-space: nowrap;
+      transition: font-size 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+
     &-link {
       color: #777;
     }
 
     &:hover {
-      background-color: #222;
       color: #fff;
       flex-grow: 2;
+      border: 2px solid #ccc;
+
+      #{$p}-description {
+        visibility: visible;
+        opacity: 1;
+        height: initial;
+      }
+
+      #{$p}-text {
+        overflow: visible;
+        font-size: 16px;
+        white-space: normal;
+      }
     }
   }
 
