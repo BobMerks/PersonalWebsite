@@ -17,7 +17,7 @@
   <nav class="nav">
     <div class="nav-content">
       <span id="nav-projects" class="nav-link">My projects</span>
-      {{--      <span id="nav-contact" class="nav-link">Contact</span>--}}
+      <span id="nav-contact" class="nav-link">Contact</span>
     </div>
   </nav>
 
@@ -42,14 +42,14 @@
         <span class="landing__line-text landing__line-text-6">Learning</span>
       </div>
     </div>
-    {{--    <div class="landing-content">--}}
-    {{--      <!-- TODO: add something interactive here i.e. 3d effect with mouse -->--}}
-    {{--    </div>--}}
+    <div class="landing-content">
+      <!-- TODO: add something interactive here i.e. 3d effect with mouse -->
+    </div>
   </section>
 
   <section id="projects" class="projects">
+    <span class="projects-header">My projects</span>
     <div class="projects-content">
-      <!-- TODO: add links -->
       <div class="projects__container">
         <div class="projects__container-title">
           <span class="projects__container-title--text">This website</span>
@@ -134,7 +134,7 @@
 
       <div class="projects__container">
         <div class="projects__container-title">
-          <span class="projects__container-title--text"> Website PAL in OOPS</span>
+          <span class="projects__container-title--text">PAL in OOPS</span>
           <span class="projects__container-title--date">May 2019</span>
         </div>
         <div class="projects__container-image"></div>
@@ -161,22 +161,14 @@
 </body>
 
 <script>
-
-  // TODO: Fix this so it can be applied multiple times with one fucntion
-  let projects = false
-  let navElement = document.getElementById("nav-projects")
-  let projectElement = document.getElementById("projects")
-
-  navElement.addEventListener("click", () => {
-    projects ? setElements("200vh", false, "My projects") : setElements("-10vh", true, "Close")
-  })
-
-  let setElements = (margin, p, text) => {
-    projectElement.style.marginTop = `${margin}`;
-    projects = p;
-    navElement.innerText = `${text}`;
+  let setNavigationLink = (e) => {
+    document.getElementById(`nav-${e}`).addEventListener("click", () => {
+      document.getElementById(`${e}`).scrollIntoView();
+    })
   }
 
+  let nav = ["projects", "contact"];
+  nav.forEach(element => setNavigationLink(element));
 
   window.onload = () => {
     const landingText = document.getElementsByClassName("landing__line-text");
