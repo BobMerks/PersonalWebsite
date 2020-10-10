@@ -23,17 +23,13 @@ body {
   }
 
   &-link {
-    text-decoration: none;
     padding: 0 25px 0 0;
     color: #ccc;
     font-size: 100%;
     opacity: 0.35;
+    cursor: pointer;
 
-    &:visited {
-      opacity: 0.35;
-    }
-
-    &:hover, &--active {
+    &:hover {
       opacity: 0.85;
     }
   }

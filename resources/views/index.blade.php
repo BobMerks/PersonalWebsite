@@ -12,13 +12,12 @@
   <!-- Styles -->
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
-<body onload="fadeIn()">
+<body>
 <div class="page">
   <nav class="nav">
     <div class="nav-content">
-      <!-- TODO: Change this to JS that scrolls 100vh -->
-      <a class="nav-link" href="#projects">My projects</a>
-      <a class="nav-link" href="#">Contact</a>
+      <span id="nav-projects" class="nav-link">My projects</span>
+      <span id="nav-contact" class="nav-link">Contact</span>
     </div>
   </nav>
 
@@ -51,7 +50,6 @@
   <section id="projects" class="projects">
     <span class="projects-header">My projects</span>
     <div class="projects-content">
-      <!-- TODO: Place projects in these elements -->
       <div class="projects__container">
         <div class="projects__container-title">
           <span class="projects__container-title--text">This website</span>
@@ -163,7 +161,16 @@
 </body>
 
 <script>
-  function fadeIn() {
+  let setNavigationLink = (e) => {
+    document.getElementById(`nav-${e}`).addEventListener("click", () => {
+      document.getElementById(`${e}`).scrollIntoView();
+    })
+  }
+
+  let nav = ["projects", "contact"];
+  nav.forEach(element => setNavigationLink(element));
+
+  window.onload = () => {
     const landingText = document.getElementsByClassName("landing__line-text");
 
     for (let i = 0; i < landingText.length; i++) {
