@@ -143,6 +143,7 @@ body {
     }
 
     &-image {
+      border-radius: 3px;
       height: 100%;
       width: 100%;
       background: #252525;
@@ -159,16 +160,25 @@ body {
       overflow: hidden;
       text-overflow: ellipsis;
       font-size: 0;
+      line-height: 1.35;
       white-space: nowrap;
       transition: font-size 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
     }
 
-    &-link {
-      color: #777;
+    &-links {
+      display: flex;
+      justify-content: space-between;
+
+      &-web_only{
+        justify-content: flex-end;
+      }
+
+      &-link {
+        color: #777;
+      }
     }
 
     &:hover {
-      color: #fff;
       flex-grow: 2;
       border: 2px solid #ccc;
 

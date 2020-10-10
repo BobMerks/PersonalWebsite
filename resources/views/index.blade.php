@@ -59,8 +59,12 @@
         </div>
         <div class="projects__container-image"></div>
         <div class="projects__container-description">
-          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
-          <a class="projects__container-link">View on GitHub</a>
+          <p class="projects__container-text">A (re)make of my personal website, since I never really finished
+            the first version I had (which can be found on my GitHub as well). It's still a work in progress, since it
+            isn't fully responsive yet and there are some features I want to add.</p>
+          <div class="projects__container-links">
+            <a class="projects__container-links-link">GitHub</a>
+          </div>
         </div>
       </div>
 
@@ -71,8 +75,14 @@
         </div>
         <div class="projects__container-image"></div>
         <div class="projects__container-description">
-          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
-          <a class="projects__container-link">View on GitHub</a>
+          <p class="projects__container-text">During a school project we ran into an issue with converting existing JSON
+            data, consisting of scores split up in various categories, to a radar graph showing these scores in a 0-100
+            scale per category. I used JavaScript to take care of this problem and apply the data to a Chart.js radar
+            graph.</p>
+          <div class="projects__container-links">
+            <a class="projects__container-links-link">GitHub</a>
+            <a class="projects__container-links-link">Full website</a>
+          </div>
         </div>
       </div>
 
@@ -83,8 +93,14 @@
         </div>
         <div class="projects__container-image"></div>
         <div class="projects__container-description">
-          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
-          <a class="projects__container-link">View on GitHub</a>
+          <p class="projects__container-text">
+            I gained some interest in sorting algorithms and took the opportunity to improve my JavaScript skills with
+            this simple website.
+          </p>
+          <div class="projects__container-links">
+            <a class="projects__container-links-link">GitHub</a>
+            <a class="projects__container-links-link">Full website</a>
+          </div>
         </div>
       </div>
 
@@ -95,8 +111,9 @@
         </div>
         <div class="projects__container-image"></div>
         <div class="projects__container-description">
-          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
-          <a class="projects__container-link">View on GitHub</a>
+          <p class="projects__container-text">During my first internship I was asked to make a drag-and-drop website
+            builder in JavaScript and Symfony 4, similar to Wordpress. It allowed the creation and editing of multiple
+            pages which later could be exported as HTML files that included all styling and scripts.</p>
         </div>
       </div>
 
@@ -107,8 +124,13 @@
         </div>
         <div class="projects__container-image"></div>
         <div class="projects__container-description">
-          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
-          <a class="projects__container-link">View on GitHub</a>
+          <p class="projects__container-text">
+            I wanted a way to keep track of what movies I watched and when, but an excel sheet wasn't good enough for
+            me, so I decided to make my own simple CRUD website with PHP. I'm currently working on improving this
+            website, since I used some pretty awkward code sometimes.</p>
+          <div class="projects__container-links">
+            <a class="projects__container-links-link">GitHub</a>
+          </div>
         </div>
       </div>
 
@@ -119,15 +141,23 @@
         </div>
         <div class="projects__container-image"></div>
         <div class="projects__container-description">
-          <p class="projects__container-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, saepe.</p>
-          <a class="projects__container-link">View on GitHub</a>
+          <p class="projects__container-text">
+            The first website I ever did for someone else; a friend of mine that needed a simple website for his
+            research assignment. It was the first time I genuinely felt proud of what I made, even if looking back on it
+            there are a lot of improvements to be made (but that's part of the learning process isn't it?).
+          </p>
+          <div class="projects__container-links projects__container-links-web_only">
+            <a class="projects__container-links-link">Full website</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <footer class="contact">
-    <div class="contact-content"></div>
+    <div class="contact-content">
+      <span></span>
+    </div>
   </footer>
 </div>
 </body>
