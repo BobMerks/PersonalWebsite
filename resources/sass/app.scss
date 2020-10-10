@@ -67,21 +67,22 @@ body {
       }
 
       &-4 {
-        transition-delay: 2.75s;
+        transition-delay: 3s;
       }
 
       &-5 {
-        transition-delay: 3.75s;
+        transition-delay: 4.25s;
       }
 
       &-6 {
-        transition-delay: 4.75s;
+        transition-delay: 5.5s;
       }
     }
   }
 }
 
 .projects {
+  // TODO: Position absolute?
   top: 0;
   margin-top: 200vh;
   height: 100vh;
