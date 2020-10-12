@@ -17,7 +17,7 @@
   <nav class="nav">
     <div class="nav-content">
       <span id="nav-projects" class="nav-link">My projects</span>
-      {{--      <span id="nav-contact" class="nav-link">Contact</span>--}}
+      <span id="nav-contact" class="nav-link">Contact</span>
     </div>
   </nav>
 
@@ -152,6 +152,10 @@
     </div>
   </section>
 
+  <section id="contact" class="projects">
+    test
+  </section>
+
   <footer class="contact">
     <div class="contact-content">
       <span></span>
@@ -161,18 +165,31 @@
 </body>
 
 <script>
-  // TODO: Fix this so it can be applied multiple times with one fucntion
+  // TODO: Fix this so it can be applied multiple times with one function
   let projects = false
   let navElement = document.getElementById("nav-projects")
   let projectElement = document.getElementById("projects")
   navElement.addEventListener("click", () => {
-    projects ? setElements("200vh", false, "My projects") : setElements("-10vh", true, "Close")
+    projects ? setElements("100vh", false, "My projects") : setElements("0vh", true, "Close")
   })
   let setElements = (margin, p, text) => {
     projectElement.style.marginTop = `${margin}`;
     projects = p;
     navElement.innerText = `${text}`;
   }
+
+  let contact = false
+  let navElementContact = document.getElementById("nav-contact")
+  let contactElement = document.getElementById("contact")
+  navElementContact.addEventListener("click", () => {
+    contact ? setContactElement("100vh", false, "Contact") : setContactElement("0vh", true, "Close")
+  })
+  let setContactElement = (margin, p, text) => {
+    contactElement.style.marginTop = `${margin}`;
+    contact = p;
+    navElementContact.innerText = `${text}`;
+  }
+
   window.onload = () => {
     const landingText = document.getElementsByClassName("landing__line-text");
     for (let i = 0; i < landingText.length; i++) {

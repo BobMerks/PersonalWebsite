@@ -15,11 +15,11 @@ body {
   justify-content: flex-end;
   width: 90%;
   padding: 2.5% 5%;
-  z-index: 999;
 }
 
 .nav-content {
   position: fixed;
+  z-index: 999;
 }
 
 .nav-link {
@@ -42,6 +42,7 @@ body {
   color: #fff;
   position: fixed;
   z-index: -999;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .landing-content {
@@ -81,12 +82,13 @@ body {
 }
 
 .projects {
+  position: absolute;
   top: 0;
-  margin-top: 200vh;
+  margin-top: 100vh;
   height: 100vh;
+  width: 100vw;
   background: #000;
-  z-index: 2;
-  display: block;
+  z-index: 1;
   transition: margin-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -194,7 +196,7 @@ body {
   top: -100px;
   height: 100px;
   content: "";
-  background: linear-gradient(180deg, transparent, #000);
+  background: linear-gradient(180deg, transparent, #0000);
   display: block;
   z-index: -1;
 }
