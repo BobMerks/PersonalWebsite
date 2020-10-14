@@ -25,13 +25,9 @@ body {
 
   &-link {
     padding: 0 25px 0 0;
-    color: #ccc;
+    color: #fff;
     font-size: 20px;
     cursor: pointer;
-
-    &:hover {
-      color: white;
-    }
   }
 }
 
@@ -44,8 +40,9 @@ body {
   color: #fff;
   position: fixed;
   z-index: -999;
-  //background: linear-gradient(45deg, #8878DE, #ff9a9e);
-
+  //background: linear-gradient(rgb(47, 58, 153), rgb(94, 86, 171), rgb(133, 115, 189), rgb(170, 147, 206), rgb(207, 179, 224));
+  //background: linear-gradient(rgb(254, 87, 193), rgb(252, 112, 184), rgb(250, 133, 174), rgb(246, 152, 164), rgb(242, 170, 154));
+  background: linear-gradient(rgb(163, 141, 229), rgb(135, 120, 215), rgb(105, 100, 201), rgb(71, 81, 188), rgb(19, 63, 174));
   &-content {
     padding: 10vh 5%;
     width: 90%;
@@ -82,8 +79,7 @@ body {
   }
 }
 
-.projects {
-  // TODO: Position absolute?
+.projects, .contact {
   position: absolute;
   top: 0;
   margin-top: 100vh;
@@ -92,6 +88,7 @@ body {
   background: #000;
   z-index: 1;
   transition: margin-top 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+
 
   &-content {
     padding: 0 5%;
@@ -106,7 +103,13 @@ body {
     font-size: 6vh;
     color: #fff;
   }
+}
 
+.projects {
+  &-content {
+    margin-top: 25%;
+    transform: translateY(-50%);
+  }
   &__container {
     $p: &;
     background-color: #000;
@@ -169,7 +172,7 @@ body {
       display: flex;
       justify-content: space-between;
 
-      &-web_only{
+      &-web_only {
         justify-content: flex-end;
       }
 
@@ -194,16 +197,45 @@ body {
       }
     }
   }
+}
 
-  &:before {
-    position: relative;
-    width: 100%;
-    top: -100px;
-    height: 100px;
-    content: "";
-    background: linear-gradient(180deg, transparent, #0000);
-    display: block;
-    z-index: -1;
+.contact {
+  display: grid;
+  place-content: center;
+
+  &-content {
+    height: 100%;
+    display: grid;
+    place-content: center;
+  }
+
+  &-title {
+    font-size: 4vmax;
+
+    &--link {
+      color: #fff;
+      text-decoration: none;
+      transition: text-decoration 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+
+      &:visited {
+        color: #fff;
+      }
+
+      &:after {
+        bottom: calc(50% - 5px);
+        content: "";
+        display: block;
+        height: 5px;
+        position: absolute;
+        background: #8878DE;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover:after {
+        width: 38vmax;
+      }
+    }
   }
 }
 

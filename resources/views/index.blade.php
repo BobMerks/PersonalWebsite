@@ -152,15 +152,13 @@
     </div>
   </section>
 
-  <section id="contact" class="projects">
-    test
-  </section>
-
-  <footer class="contact">
+  <section id="contact" class="contact">
     <div class="contact-content">
-      <span></span>
+      <div class="contact-title">
+        <a class="contact-title--link" href="mailto:hello@bobmerks.com">hello@bobmerks.com</a>
+      </div>
     </div>
-  </footer>
+  </section>
 </div>
 </body>
 

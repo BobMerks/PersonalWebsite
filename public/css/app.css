@@ -24,13 +24,9 @@ body {
 
 .nav-link {
   padding: 0 25px 0 0;
-  color: #ccc;
+  color: #fff;
   font-size: 20px;
   cursor: pointer;
-}
-
-.nav-link:hover {
-  color: white;
 }
 
 .landing {
@@ -42,6 +38,7 @@ body {
   color: #fff;
   position: fixed;
   z-index: -999;
+  background: linear-gradient(#a38de5, #8778d7, #6964c9, #4751bc, #133fae);
 }
 
 .landing-content {
@@ -80,7 +77,8 @@ body {
   transition-delay: 5.5s;
 }
 
-.projects {
+.projects,
+.contact {
   position: absolute;
   top: 0;
   margin-top: 100vh;
@@ -91,7 +89,8 @@ body {
   transition: margin-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-content {
+.projects-content,
+.contact-content {
   padding: 0 5%;
   width: 90%;
   display: flex;
@@ -99,10 +98,16 @@ body {
   justify-content: space-between;
 }
 
-.projects-header {
+.projects-header,
+.contact-header {
   padding-left: 5%;
   font-size: 6vh;
   color: #fff;
+}
+
+.projects-content {
+  margin-top: 25%;
+  transform: translateY(-50%);
 }
 
 .projects__container {
@@ -189,15 +194,46 @@ body {
   white-space: normal;
 }
 
-.projects:before {
-  position: relative;
-  width: 100%;
-  top: -100px;
-  height: 100px;
+.contact {
+  display: grid;
+  place-content: center;
+}
+
+.contact-content {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.contact-title {
+  font-size: 4vmax;
+}
+
+.contact-title--link {
+  color: #fff;
+  text-decoration: none;
+  transition: -webkit-text-decoration 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: text-decoration 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: text-decoration 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-text-decoration 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-title--link:visited {
+  color: #fff;
+}
+
+.contact-title--link:after {
+  bottom: calc(50% - 5px);
   content: "";
-  background: linear-gradient(180deg, transparent, #0000);
   display: block;
-  z-index: -1;
+  height: 5px;
+  position: absolute;
+  background: #8878DE;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.contact-title--link:hover:after {
+  width: 38vmax;
 }
 
 .visible {
