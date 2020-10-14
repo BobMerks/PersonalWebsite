@@ -163,29 +163,50 @@
 </body>
 
 <script>
-  // TODO: Fix this so it can be applied multiple times with one function
   let projects = false
-  let navElement = document.getElementById("nav-projects")
-  let projectElement = document.getElementById("projects")
-  navElement.addEventListener("click", () => {
-    projects ? setElements("100vh", false, "My projects") : setElements("0vh", true, "Close")
-  })
-  let setElements = (margin, p, text) => {
-    projectElement.style.marginTop = `${margin}`;
-    projects = p;
-    navElement.innerText = `${text}`;
-  }
-
   let contact = false
+
+  let navElementProjects = document.getElementById("nav-projects")
+  let projectElement = document.getElementById("projects")
+
   let navElementContact = document.getElementById("nav-contact")
   let contactElement = document.getElementById("contact")
-  navElementContact.addEventListener("click", () => {
-    contact ? setContactElement("100vh", false, "Contact") : setContactElement("0vh", true, "Close")
+
+  navElementProjects.addEventListener("click", () => {
+    projects ? setElements("p", "100vh", false, "My projects") : setElements("p", "0vh", true, "Close")
   })
-  let setContactElement = (margin, p, text) => {
-    contactElement.style.marginTop = `${margin}`;
-    contact = p;
-    navElementContact.innerText = `${text}`;
+
+  navElementContact.addEventListener("click", () => {
+    contact ? setElements("c", "100vh", false, "Contact") : setElements("c", "0vh", true, "Close")
+  })
+
+
+  let setElements = (e, margin, p, text) => {
+    if (e === "p"){
+      projectElement.style.marginTop = `${margin}`;
+      projectElement.style.zIndex = "10";
+      projects = p;
+      navElementProjects.innerText = `${text}`;
+      if (contact){
+        contactElement.style.marginTop = "100vh";
+        contactElement.style.zIndex = "1";
+        contact = false;
+        navElementContact.innerText = `Contact`;
+      }
+    }
+
+    else {
+      contactElement.style.marginTop = `${margin}`;
+      contactElement.style.zIndex = "10";
+      contact = p;
+      navElementContact.innerText = `${text}`;
+      if (projects){
+        projectElement.style.marginTop = "100vh";
+        projectElement.style.zIndex = "1";
+        projects = false;
+        navElementProjects.innerText = `My projects`;
+      }
+    }
   }
 
   window.onload = () => {
