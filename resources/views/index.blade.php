@@ -45,7 +45,7 @@
   </section>
 
   <section id="projects" class="projects">
-    <div class="projects-content">
+    <div id="projects-content" class="projects-content">
       <!-- TODO: add links -->
       <div class="projects__container">
         <div class="projects__container-title">

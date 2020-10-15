@@ -5,6 +5,7 @@
 
 body {
   background: #000;
+  height: 100vh;
   margin: 0;
   color: #ccc;
   font-family: "Josefin Sans", sans-serif;
@@ -103,11 +104,6 @@ body {
   padding-left: 5%;
   font-size: 6vh;
   color: #fff;
-}
-
-.projects-content {
-  margin-top: 25%;
-  transform: translateY(-50%);
 }
 
 .projects__container {

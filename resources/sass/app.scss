@@ -7,6 +7,7 @@ html {
 
 body {
   background: #000;
+  height: 100vh;
   margin: 0;
   color: #ccc;
   font-family: 'Josefin Sans', sans-serif;
@@ -106,10 +107,7 @@ body {
 }
 
 .projects {
-  &-content {
-    margin-top: 25%;
-    transform: translateY(-50%);
-  }
+
   &__container {
     $p: &;
     background-color: #000;

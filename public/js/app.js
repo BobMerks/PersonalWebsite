@@ -134,13 +134,26 @@ var setElements = function setElements(e, margin, p, text) {
   }
 };
 
+var projectsMargin = function projectsMargin() {
+  var pageHeight = document.body.scrollHeight;
+  var element = document.getElementById('projects-content');
+  var elementHeight = element.clientHeight;
+  console.log(pageHeight, elementHeight);
+  var elementMargin = (pageHeight - elementHeight) / 2;
+  element.style.paddingTop = "".concat(elementMargin, "px");
+};
+
 window.onload = function () {
   var landingText = document.getElementsByClassName("landing__line-text");
 
   for (var i = 0; i < landingText.length; i++) {
     landingText.item(i).classList.add("visible");
   }
+
+  projectsMargin();
 };
+
+window.addEventListener('resize', projectsMargin);
 
 /***/ }),
 
@@ -162,8 +175,8 @@ window.onload = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\bobme\Documents\Personal Projects\PersonalWebsite\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\bobme\Documents\Personal Projects\PersonalWebsite\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\bobme\Documents\Personal Website\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\bobme\Documents\Personal Website\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -44,9 +44,21 @@ let setElements = (e, margin, p, text) => {
   }
 }
 
+let projectsMargin = () => {
+  let pageHeight = document.body.scrollHeight;
+  let element = document.getElementById('projects-content');
+  let elementHeight = element.clientHeight;
+
+  let elementMargin = (pageHeight - elementHeight) / 2;
+  element.style.paddingTop = `${elementMargin}px`;
+}
+
 window.onload = () => {
   const landingText = document.getElementsByClassName("landing__line-text");
   for (let i = 0; i < landingText.length; i++) {
     landingText.item(i).classList.add("visible");
   }
+  projectsMargin();
 }
+
+window.addEventListener('resize', projectsMargin);
