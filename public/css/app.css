@@ -28,6 +28,10 @@ body {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .landing {

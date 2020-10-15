@@ -138,7 +138,6 @@ var projectsMargin = function projectsMargin() {
   var pageHeight = document.body.scrollHeight;
   var element = document.getElementById('projects-content');
   var elementHeight = element.clientHeight;
-  console.log(pageHeight, elementHeight);
   var elementMargin = (pageHeight - elementHeight) / 2;
   element.style.paddingTop = "".concat(elementMargin, "px");
 };
