@@ -22,6 +22,7 @@ body {
   &-content {
     position: fixed;
     z-index: 999;
+    user-select: none;
   }
 
   &-link {
@@ -29,7 +30,6 @@ body {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-    user-select: none;
   }
 }
 
