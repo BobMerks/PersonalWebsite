@@ -21,6 +21,10 @@ body {
 .nav-content {
   position: fixed;
   z-index: 999;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .nav-link {
@@ -28,10 +32,6 @@ body {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .landing {
@@ -67,11 +67,11 @@ body {
 
 .landing__line-text-2,
 .landing__line-text-3 {
-  transition-delay: 1.5s;
+  transition-delay: 1.75s;
 }
 
 .landing__line-text-4 {
-  transition-delay: 3s;
+  transition-delay: 3.25s;
 }
 
 .landing__line-text-5 {
@@ -79,7 +79,7 @@ body {
 }
 
 .landing__line-text-6 {
-  transition-delay: 5.5s;
+  transition-delay: 5.25s;
 }
 
 .projects,
